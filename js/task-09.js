@@ -9,6 +9,6 @@ const colorLabel = document.querySelector('.color')
 button.addEventListener('click', onButtonElClick);
 
 function onButtonElClick() {
-  body.style.backgroundColor = getRandomHexColor();
   colorLabel.textContent = getRandomHexColor();
+  body.style.backgroundColor = colorLabel.textContent;
 };
